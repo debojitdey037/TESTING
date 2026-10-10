@@ -1,7 +1,10 @@
 const express = require("express");
 const app = express();
 const { products } = require('./data')
-const PORT = 3000;
+const dotenv = require('dotenv');
+dotenv.config();
+
+const PORT = process.env.PORT || 3000;
 
 const cors = require("cors");
 app.use(cors());
