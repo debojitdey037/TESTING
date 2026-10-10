@@ -8,7 +8,7 @@ function App() {
   useEffect(()=>{
     async function getData(){
       console.log("......loading");
-      let response = await fetch("http://localhost:3000/api/products");
+      let response = await fetch("https://testing-2po4.onrender.com/api/products");
       let data = await response.json();
       setProducts(data);
       console.log(products);
